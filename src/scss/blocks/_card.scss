@@ -1,0 +1,114 @@
+.card {
+    display: grid;
+    gap: 12px;
+    max-width: 262px;
+    position: relative;
+    &__picture {
+        position: relative;
+       img {
+        width: 100%;
+       }
+    }
+    &__desc {
+        display: grid;
+        gap: 4px;
+    }
+    &__new {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        padding: 4px 14px;
+        background-color: #fff;
+        color: #121212;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 700;
+        border-radius: 4px;
+    }
+    &__rating {
+       display: flex;
+       align-items: center;
+       gap: 2px;
+    }
+    &__title {
+       font-weight: 600;
+       font-size: 16px;
+       line-height: 1.625;
+       color: #141718;
+    }
+    &__price {
+       font-size: 14px;
+       font-weight: 600;
+       line-height: 1.5;
+       color: #121212;
+    }
+    &__fav {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        transition: 0.5s;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 3;
+    }
+    &__fav-btn {
+        display: flex;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 6px 6px 3px 6px;
+        box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.5);
+    }
+    &__btn {
+        position: absolute;
+        right: 16px;
+        left: 16px;
+        bottom: 16px;
+        transition: 0.5s;
+        transform: translateY(50%);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 3;
+        .btn {
+            padding: 9px 40px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.4px;
+            background-color: #141718;
+            color: #fff;
+            border-radius: 8px;
+            width: 100%;
+            box-shadow: 0 8px 16px -8px rgba(12, 12, 12, 0.5);
+        }
+    }
+    &:hover {
+        .card__btn {
+            transform: translateY(0%);
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+    &:hover {
+        .card__fav {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+    &__fav-btn:hover {
+        background-color: #A7F9EA;
+        transition: 0.5s;
+        svg path {
+            fill: #fff;
+        }
+    }
+    &__link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
