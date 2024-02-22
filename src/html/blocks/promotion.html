@@ -1,0 +1,40 @@
+<section class="promotion">
+    <div class="container">
+        <div class="promotion__content">
+            <div class="promotion__info">
+
+                <div class="promotion__desc">
+                    <div class="promotion__desc-tagline">
+                        <p>pROMOTION</p>
+                    </div>
+                    <div class="promotion__desc-title">
+                        <h2 class="title">Hurry up! 40% OFF</h2>
+                    </div>
+                    <div class="promotion__desc-text">
+                        <p>Thousands of high tech are waiting for you</p>
+                    </div>
+                </div>
+
+                 <div class="promotion__timer">
+                    <div class="promotion__timer-express">
+                        <p>Offer expires in:</p>
+                    </div>
+                    @@include('templates/timer.html')
+                 </div>
+
+
+
+                 <div class="promotion__btn">
+                    <a href="#!">Shop now</a>
+                 </div>
+            </div>
+            <div class="promotion__image">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./img/400.png 1x">
+                    <source srcset="./img/promotion-img@2x.png 2x" media="(min-width: 1920px)">
+                    <img src="./img/promotion-img.png"  alt="promotion img">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>

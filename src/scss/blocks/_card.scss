@@ -1,10 +1,10 @@
 .card {
     display: grid;
     gap: 12px;
-    max-width: 262px;
     position: relative;
     &__picture {
         position: relative;
+        width: 100%;
        img {
         width: 100%;
        }
