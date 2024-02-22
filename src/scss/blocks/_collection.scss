@@ -1,0 +1,12 @@
+.collection {
+    &__title {
+        padding: 48px 0px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+
