@@ -1,14 +1,67 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 50px 0;
-	font-size: 32px;
+	background-color: #141718;
+	padding: 80px 0px 48px 0px;
     color: #fff;
-
-	h1 {
-		font-size: 32px;
+	h3 {
+		font-size: 14px;
+        line-height: 157%;
 	}
-
-	@media (max-width: 1200px) {
-		font-size: 26px;
+	&__body {
+		margin-bottom: 16px;
+		border-bottom: 1px solid #6C7275;
+		padding-bottom: 49px;
 	}
+	&__body,
+	&__block,
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+	&__title {
+        padding-left: 55px;
+		position: relative;
+		&::before {
+			position: absolute;
+			content: '';
+			width: 1px;
+			height: 24px;
+			top: 0;
+			left: 25px;
+			background-color: #6C7275
+		}
+	}
+	&__list {
+		gap: 10px 40px;
+	}
+	&__list-item {
+		a {
+			color: #fff;
+			font-size: 14px;
+            line-height: 157%;
+		}
+	}
+	&__bottom,
+	&__text,
+	&__messengers {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px 25px;
+		flex-wrap: wrap;
+	}
+	&__text {
+		font-size: 12px;
+        line-height: 167%;
+		a {
+			color: #fff;
+			font-weight: 600;
+		}
+	}
+	a:hover {
+        color: #A7F9EA;
+		transition: 0.5;
+    }
 }
