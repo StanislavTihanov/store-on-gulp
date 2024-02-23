@@ -1,0 +1,44 @@
+
+
+.newsletter {
+    &__content {
+        position: relative;
+        text-align: center;
+    }
+    &__info {
+        position: relative;
+        z-index: 2;
+        padding: 90px 0px;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    &__info-title {
+        margin-bottom: 8px;
+    }
+    &__info-text {
+        margin-bottom: 32px;
+    }
+    &__info-form label {
+       border-bottom: 1px solid #6c727585;
+       padding-bottom: 12px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: 10px;
+    }
+    &__info-form-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        img {
+            width: 100%;
+        }
+    }
+}

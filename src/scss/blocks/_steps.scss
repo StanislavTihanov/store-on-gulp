@@ -1,0 +1,25 @@
+.steps {
+    margin: 40px 0px;
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+        gap: 24px;
+    }
+    &__element {
+        padding: 48px 32px;
+        background-color: #F3F5F7;
+    }
+    &__element-img {
+        margin-bottom: 16px;
+    }
+    &__element-desc dt{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        margin-bottom: 8px;
+    }
+    &__element-desc {
+        font-size: 14px;
+        line-height: 171%;
+    }
+}
